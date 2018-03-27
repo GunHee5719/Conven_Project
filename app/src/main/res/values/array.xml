@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="quantity">
+        <item>선택하세요</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="search">
+        <item>선택하세요</item>
+        <item>이름으로 검색</item>
+        <item>등록자로 검색</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>선택하세요</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </string-array>
+</resources>

@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#E0FFFF">
+            <ImageView
+                android:layout_width="97dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/introimage"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/loginInforAtDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="아이디"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="레시피상세정보"
+                    android:textSize="30dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="레시피"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7">
+
+                        <ImageView
+                            android:id="@+id/recipeNameAreaAtDetail"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/line2"/>
+
+                        <TextView
+                            android:id="@+id/recipeNameAtDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="recipeName"
+                            android:textSize="16dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="등록자"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7">
+
+                        <ImageView
+                            android:id="@+id/userNameAreaAtDetail"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/line2"/>
+
+                        <TextView
+                            android:id="@+id/userNameAtDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="userName"
+                            android:textSize="16dp"
+                            android:layout_alignLeft="@id/userNameAreaAtDetail"
+                            android:layout_alignRight="@id/userNameAreaAtDetail"
+                            android:layout_alignTop="@id/userNameAreaAtDetail"
+                            android:layout_alignBottom="@id/userNameAreaAtDetail"
+                            android:gravity="center"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="편의점"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7">
+
+                        <ImageView
+                            android:id="@+id/convinNameAreaAtDetail"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/line2"/>
+
+                        <TextView
+                            android:id="@+id/convinNameAtDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="convinName"
+                            android:textSize="16dp"
+                            android:layout_alignLeft="@id/convinNameAreaAtDetail"
+                            android:layout_alignRight="@id/convinNameAreaAtDetail"
+                            android:layout_alignTop="@id/convinNameAreaAtDetail"
+                            android:layout_alignBottom="@id/convinNameAreaAtDetail"
+                            android:gravity="center"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="난이도"
+                            android:textSize="16dp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp">
+
+                            <ImageView
+                                android:id="@+id/difficultyAreaAtDetail"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:src="@drawable/line2"/>
+
+                            <TextView
+                                android:id="@+id/difficultyAtDetail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="난이도"
+                                android:textSize="16dp"
+                                android:layout_alignLeft="@id/difficultyAreaAtDetail"
+                                android:layout_alignRight="@id/difficultyAreaAtDetail"
+                                android:layout_alignTop="@id/difficultyAreaAtDetail"
+                                android:layout_alignBottom="@id/difficultyAreaAtDetail"
+                                android:gravity="center"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="몇인분"
+                            android:textSize="16dp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp">
+
+                            <ImageView
+                                android:id="@+id/quantityAreaAtDetail"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:src="@drawable/line2"/>
+                            <TextView
+                                android:id="@+id/quantityAtDetail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2人"
+                                android:textSize="16dp"
+                                android:layout_alignLeft="@id/quantityAreaAtDetail"
+                                android:layout_alignRight="@id/quantityAreaAtDetail"
+                                android:layout_alignTop="@id/quantityAreaAtDetail"
+                                android:layout_alignBottom="@id/quantityAreaAtDetail"
+                                android:gravity="center"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="조리시간"
+                            android:textSize="16dp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp">
+
+                            <ImageView
+                                android:id="@+id/timeAreaAtDetail"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:src="@drawable/line2"/>
+
+                            <TextView
+                                android:id="@+id/timeAtDetail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5분"
+                                android:textSize="16dp"
+                                android:layout_alignLeft="@id/timeAreaAtDetail"
+                                android:layout_alignRight="@id/timeAreaAtDetail"
+                                android:layout_alignTop="@id/timeAreaAtDetail"
+                                android:layout_alignBottom="@id/timeAreaAtDetail"
+                                android:gravity="center"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="준비물"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7">
+
+                        <ImageView
+                            android:id="@+id/materialAreaAtDetail"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/line2"/>
+
+                        <TextView
+                            android:id="@+id/materialAtDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="recipeMaterial"
+                            android:textSize="16dp"
+                            android:paddingLeft="10dp"
+                            android:layout_alignLeft="@id/materialAreaAtDetail"
+                            android:layout_alignRight="@id/materialAreaAtDetail"
+                            android:layout_alignTop="@id/materialAreaAtDetail"
+                            android:layout_alignBottom="@id/materialAreaAtDetail"
+                            android:gravity="center_vertical"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="레시피설명"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7">
+
+                        <ImageView
+                            android:id="@+id/recipedetailAreaAtDetail"
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/line2"/>
+
+                        <TextView
+                            android:id="@+id/recipedetailAtDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="recipeDetail"
+                            android:textSize="16dp"
+                            android:paddingLeft="10dp"
+                            android:layout_alignLeft="@id/recipedetailAreaAtDetail"
+                            android:layout_alignRight="@id/recipedetailAreaAtDetail"
+                            android:layout_alignTop="@id/recipedetailAreaAtDetail"
+                            android:layout_alignBottom="@id/recipedetailAreaAtDetail"
+                            android:gravity="center_vertical"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/goToReviewButton"
+                    android:layout_width="200dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/line2"/>
+
+                    <TextView
+                        android:id="@+id/goToReviewButtonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="후기 등록하러가기"
+                        android:textSize="16dp"
+                        android:layout_alignLeft="@id/goToReviewButton"
+                        android:layout_alignRight="@id/goToReviewButton"
+                        android:layout_alignTop="@id/goToReviewButton"
+                        android:layout_alignBottom="@id/goToReviewButton"
+                        android:gravity="center"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

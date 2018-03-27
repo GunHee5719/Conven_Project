@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#E0FFFF">
+
+            <ImageView
+                android:layout_width="97dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/introimage"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/loginInforAtReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="아이디"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="후기작성"
+                    android:textSize="30dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="레시피"
+                    android:textSize="16dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/recipeNameAtReview"
+                    android:layout_weight="7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="recipeName"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="레시피를 평가해주세요!"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:id="@+id/Star1_X"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/zerostar"
+                        android:layout_centerInParent="true"/>
+                    <ImageView
+                        android:id="@+id/Star1_O"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/colorstar"
+                        android:layout_centerInParent="true"
+                        android:visibility="invisible"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+                    <ImageView
+                        android:id="@+id/Star2_X"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/zerostar"
+                        android:layout_centerInParent="true"/>
+                    <ImageView
+                        android:id="@+id/Star2_O"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/colorstar"
+                        android:layout_centerInParent="true"
+                        android:visibility="invisible"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+                    <ImageView
+                        android:id="@+id/Star3_X"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/zerostar"
+                        android:layout_centerInParent="true"/>
+                    <ImageView
+                        android:id="@+id/Star3_O"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/colorstar"
+                        android:layout_centerInParent="true"
+                        android:visibility="invisible"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+                    <ImageView
+                        android:id="@+id/Star4_X"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/zerostar"
+                        android:layout_centerInParent="true"/>
+                    <ImageView
+                        android:id="@+id/Star4_O"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/colorstar"
+                        android:layout_centerInParent="true"
+                        android:visibility="invisible"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+                    <ImageView
+                        android:id="@+id/Star5_X"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/zerostar"
+                        android:layout_centerInParent="true"/>
+                    <ImageView
+                        android:id="@+id/Star5_O"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/colorstar"
+                        android:layout_centerInParent="true"
+                        android:visibility="invisible"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="후기 작성"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"/>
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/editReviewArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/line"/>
+
+                <EditText
+                    android:id="@+id/editReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/editReviewArea"
+                    android:layout_alignRight="@id/editReviewArea"
+                    android:layout_alignTop="@id/editReviewArea"
+                    android:layout_alignBottom="@id/editReviewArea"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:paddingLeft="10dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5">
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/enterReviewButton"
+                android:layout_width="150dp"
+                android:layout_height="42dp"
+                android:src="@drawable/line"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="후기 등록"
+                android:textSize="16dp"
+                android:layout_alignLeft="@id/enterReviewButton"
+                android:layout_alignRight="@id/enterReviewButton"
+                android:layout_alignTop="@id/enterReviewButton"
+                android:layout_alignBottom="@id/enterReviewButton"
+                android:gravity="center"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

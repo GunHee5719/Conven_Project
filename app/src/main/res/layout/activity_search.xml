@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#E0FFFF">
+
+            <ImageView
+                android:layout_width="97dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/introimage"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/loginInforAtSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="아이디"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="레시피찾기"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7">
+
+            <Spinner
+                android:id="@+id/searchSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.3"
+                android:layout_gravity="top"></Spinner>
+            <EditText
+                android:id="@+id/inputSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:inputType="text"
+                android:layout_weight="4.7"/>
+            <ImageView
+                android:id="@+id/searchButton"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/magnifier"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#cecece"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:gravity="center"
+                        android:text="순번"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#cecece"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:gravity="center"
+                        android:text="소개"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/myRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/goToMainAtSearchButton"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/line"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/goToMainAtSearchButton"
+                    android:layout_alignRight="@id/goToMainAtSearchButton"
+                    android:layout_alignTop="@id/goToMainAtSearchButton"
+                    android:layout_alignBottom="@id/goToMainAtSearchButton"
+                    android:gravity="center"
+                    android:textColor="#979797"
+                    android:textSize="16dp"
+                    android:text="돌아가기"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/searchAllButton"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/line"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/searchAllButton"
+                    android:layout_alignRight="@id/searchAllButton"
+                    android:layout_alignTop="@id/searchAllButton"
+                    android:layout_alignBottom="@id/searchAllButton"
+                    android:gravity="center"
+                    android:textColor="#979797"
+                    android:textSize="16dp"
+                    android:text="모든 레시피 보기"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

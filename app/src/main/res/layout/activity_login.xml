@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="200dp"
+            android:layout_weight="0.5"
+            android:background="#E0FFFF">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/introimage" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignBottom="@+id/inputLoginID"
+                    android:layout_alignTop="@+id/inputLoginID"
+                    android:layout_toLeftOf="@+id/inputLoginID"
+                    android:layout_toStartOf="@+id/inputLoginID"
+                    android:src="@drawable/ic_account_box_black_24dp" />
+                <EditText
+                    android:id="@+id/inputLoginID"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:inputType="text"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:hint="아이디"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignBottom="@+id/inputLoginPW"
+                    android:layout_toLeftOf="@+id/inputLoginPW"
+                    android:layout_toStartOf="@+id/inputLoginPW"
+                    android:src="@drawable/ic_lock_black_24dp" />
+                <EditText
+                    android:id="@+id/inputLoginPW"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:inputType="textPassword"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:hint="비밀번호"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/loginButton"
+                    android:layout_width="220dp"
+                    android:layout_height="45dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/line"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/loginButton"
+                    android:layout_alignRight="@id/loginButton"
+                    android:layout_alignTop="@id/loginButton"
+                    android:layout_alignBottom="@id/loginButton"
+                    android:gravity="center"
+                    android:textColor="#979797"
+                    android:textSize="17dp"
+                    android:text="로그인"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/signinButton"
+                    android:layout_width="220dp"
+                    android:layout_height="45dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/signinButton"
+                    android:layout_alignLeft="@id/signinButton"
+                    android:layout_alignRight="@id/signinButton"
+                    android:layout_alignTop="@id/signinButton"
+                    android:gravity="center"
+                    android:text="회원가입"
+                    android:textColor="#979797"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

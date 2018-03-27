@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#ffffff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#E0FFFF">
+
+        <ImageView
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/introimage"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/loginInforAtDetailReview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="아이디"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="상세후기"
+                android:textSize="30dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="레시피"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7">
+
+                <ImageView
+                    android:id="@+id/recipeNameAreaAtDetailReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:src="@drawable/line2"/>
+
+                <TextView
+                    android:id="@+id/recipeNameAtDetailReview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="recipeName"
+                    android:textSize="16dp"
+                    android:layout_alignLeft="@id/recipeNameAreaAtDetailReview"
+                    android:layout_alignRight="@id/recipeNameAreaAtDetailReview"
+                    android:layout_alignTop="@id/recipeNameAreaAtDetailReview"
+                    android:layout_alignBottom="@id/recipeNameAreaAtDetailReview"
+                    android:gravity="center" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="후기"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7">
+
+                <ImageView
+                    android:id="@+id/reviewAreaAtDetailReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/line2"/>
+
+                <TextView
+                    android:id="@+id/reviewAtDetailReview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="describe"
+                    android:textSize="16dp"
+                    android:paddingLeft="10dp"
+                    android:layout_alignLeft="@id/reviewAreaAtDetailReview"
+                    android:layout_alignRight="@id/reviewAreaAtDetailReview"
+                    android:layout_alignTop="@id/reviewAreaAtDetailReview"
+                    android:layout_alignBottom="@id/reviewAreaAtDetailReview"
+                    android:gravity="center_vertical" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
